@@ -9,7 +9,7 @@ let materia3;
 nombre = prompt("Ingrese su nombre. Escriba SALIR para finalizar el cuestionario.");
 
 if (nombre != "SALIR"){
-    console.log('Bienvenido ', nombre);
+    alert('Bienvenido '+nombre);
 
     while (respuesta != "SALIR"){
         respuesta = prompt("¿Finalizo la Primaria? SI o NO" );
@@ -57,14 +57,14 @@ if (nombre != "SALIR"){
     }       
 
     if (respuesta != "SALIR"){
-        console.log('Su maximo estudio alcanzado es:  ', estudio);
+        alert('Su maximo estudio alcanzado es '+estudio);
     }
     else{
-        console.log('No finalizó el cuestionario.');
+        alert('No finalizó el cuestionario.');
     }
 }
 else{
-    console.log('No inició el cuestionario sobre su Nivel Educativo. ');
+    alert('No inició el cuestionario sobre su Nivel Educativo. ');
 }
 
 for (materia; materia < 3; materia++ ){
@@ -88,9 +88,9 @@ for (materia; materia < 3; materia++ ){
     }
 }
 if (materia1 != "SALIR" && materia2 != "SALIR" && materia3 != "SALIR"){
-    console.log("Sus materias favoritas son ",materia1,", ",materia2,"y ",materia3);
-    console.log(nombre, ", gracias por participar!");    
+    alert("Sus materias favoritas son "+materia1+", "+materia2+"y "+materia3);
+    alert(nombre+", gracias por participar!");    
 }
 else{
-    console.log('No finalizó el cuestionario sobre sus Áreas de Estudio de preferencia. ');
+    alert('No finalizó el cuestionario sobre sus Áreas de Estudio de preferencia. ');
 }
